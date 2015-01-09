@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:paddingLeft="@dimen/margin_l" android:paddingTop="@dimen/margin_m" android:paddingRight="@dimen/margin_l" android:paddingBottom="@dimen/margin_xs_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gc_broadcast_invite_header" style="@style/re_11"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

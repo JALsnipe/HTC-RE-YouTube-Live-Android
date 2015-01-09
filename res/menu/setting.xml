@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/re_btn_view_finder_dark" android:id="@id/menu_live_link" android:orderInCategory="10" android:title="@string/gc_live_stream_menu_link" android:showAsAction="never" />
+    <item android:icon="@drawable/re_btn_menu_dark" android:id="@id/menu_Live_log_out" android:orderInCategory="100" android:title="@string/gc_live_stream_menu_log_out" android:showAsAction="never" />
+</menu>

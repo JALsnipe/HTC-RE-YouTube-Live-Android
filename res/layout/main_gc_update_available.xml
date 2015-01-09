@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.lib1.cc.widget.HtcOverlapLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <RelativeLayout android:id="@id/battery_low_info" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.htc.lib1.cc.widget.HtcListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/HtcListView" />
+        <LinearLayout android:id="@id/battery_low_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:id="@id/low_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_l" android:layout_marginTop="@dimen/spacing_2" android:layout_marginRight="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_xs_2" android:text="@string/gc_show_battery_low_remind" style="@style/re_list_body_primary_m" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.htc.lib1.cc.widget.HtcFooter android:id="@id/footerBar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.lib1.cc.widget.HtcFooterTextButton android:id="@id/install_button" android:text="@string/gc_advance_settings_insatll_button" />
+    </com.htc.lib1.cc.widget.HtcFooter>
+</com.htc.lib1.cc.widget.HtcOverlapLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:state_pressed="true" android:drawable="@drawable/re_btn_fisheye_on_dark_xl" />
+    <item android:state_checked="true" android:state_pressed="false" android:drawable="@drawable/re_btn_fisheye_rest_dark_xl" />
+    <item android:state_checked="false" android:state_pressed="true" android:drawable="@drawable/re_btn_defisheye_pressed_dark_xl" />
+    <item android:state_checked="false" android:state_pressed="false" android:drawable="@drawable/re_btn_defisheye_rest_dark_xl" />
+    <item android:drawable="@drawable/re_btn_defisheye_rest_dark_xl" />
+</selector>

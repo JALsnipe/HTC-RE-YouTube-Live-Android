@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/zoe_discovery_background_01" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_m_2" android:src="@drawable/zoe_logo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="@style/automotive_b_separator_primary_m" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_xs" android:text="@string/gc_install_zoe_major" android:layout_below="@id/imageView1" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="@style/list_body_primary_m" android:gravity="center" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_s" android:text="@string/gc_install_zoe_second" android:layout_below="@id/textView1" android:layout_centerHorizontal="true" />
+    <com.htc.lib1.cc.widget.HtcRimButton android:textSize="@dimen/list_primary_m" android:id="@id/btnDownloadZOE" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_l" android:layout_marginRight="@dimen/margin_l" android:layout_marginBottom="10.0dip" android:text="@string/va_download" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

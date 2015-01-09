@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layout" android:background="#ffff0000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="25.0sp" android:textColor="#ff000000" android:id="@id/duration_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Duration(minute):" />
+    <EditText android:id="@id/editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:ems="10" android:layout_toRightOf="@id/duration_text" android:layout_alignBaseline="@id/duration_text" android:layout_alignBottom="@id/duration_text" android:inputType="number">
+        <requestFocus />
+    </EditText>
+    <TextView android:textSize="25.0sp" android:textColor="#ff000000" android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="Interval(second):" android:layout_below="@id/editText1" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="25.0sp" android:textColor="#ff000000" android:id="@id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34.0dip" android:text="Framerate(fps):" android:layout_below="@id/TextView01" android:layout_alignParentLeft="true" />
+    <EditText android:id="@id/editText2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_alignBaseline="@id/TextView01" android:layout_alignLeft="@id/editText1" android:layout_alignBottom="@id/TextView01" android:layout_alignParentRight="true" android:inputType="number" />
+    <Button android:id="@id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="Done" android:layout_below="@id/TextView02" android:layout_alignRight="@id/TextView02" />
+    <CheckBox android:textColor="#ff000000" android:id="@id/check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="28.0dip" android:text="AutoStop" android:layout_toRightOf="@id/button1" android:layout_below="@id/TextView02" />
+    <EditText android:id="@id/editText3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:layout_alignBaseline="@id/TextView02" android:layout_alignLeft="@id/editText2" android:layout_alignBottom="@id/TextView02" android:layout_alignParentRight="true" android:inputType="number" />
+</RelativeLayout>

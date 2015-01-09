@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hint_view_margin_bottom">16.129974dip</dimen>
+    <item type="dimen" name="hint_view_margin_left">@dimen/common_dimen_m1</item>
+    <item type="dimen" name="hint_view_margin_right">@dimen/common_dimen_m1</item>
+    <dimen name="hint_view_height">17.00998dip</dimen>
+    <dimen name="background_color_status_bar_height">44.0dip</dimen>
+    <dimen name="background_color_widget_height">167.19998dip</dimen>
+    <dimen name="button_panel_height">80.95999dip</dimen>
+    <dimen name="button_panel_button_icon_width">31.679993dip</dimen>
+    <dimen name="button_panel_button_icon_height">31.679993dip</dimen>
+    <dimen name="button_panel_button_icon_margin_bottom">3.2299805dip</dimen>
+    <dimen name="button_panel_button_title_height">32.849976dip</dimen>
+    <dimen name="button_panel_two_button_width">158.4dip</dimen>
+    <item type="dimen" name="button_panel_two_button_title_margin_left">@dimen/common_dimen_m1_2</item>
+    <item type="dimen" name="button_panel_two_button_title_margin_right">@dimen/common_dimen_m1_2</item>
+    <dimen name="button_panel_four_button_width">79.19998dip</dimen>
+    <item type="dimen" name="button_panel_four_button_title_margin_left">@dimen/common_dimen_m2</item>
+    <item type="dimen" name="button_panel_four_button_title_margin_right">@dimen/common_dimen_m2</item>
+    <dimen name="button_panel_three_button_height">83.00998dip</dimen>
+    <dimen name="button_panel_three_button_width">99.149994dip</dimen>
+    <dimen name="button_panel_three_button_margin_left">9.679993dip</dimen>
+    <dimen name="button_panel_three_button_margin_right">9.679993dip</dimen>
+    <dimen name="button_panel_three_button_icon_margin_bottom">4.98999dip</dimen>
+    <dimen name="button_panel_three_button_title_height">41.359985dip</dimen>
+    <item type="dimen" name="button_panel_three_button_title_margin_left">@dimen/common_dimen_m2</item>
+    <item type="dimen" name="button_panel_three_button_title_margin_right">@dimen/common_dimen_m2</item>
+    <dimen name="two_tile_middle_gap_width">2.0px</dimen>
+    <dimen name="two_tile_middle_gap_height">273.08594dip</dimen>
+    <dimen name="table_view_height">280.0px</dimen>
+    <dimen name="table_view_slide_offest">60.0px</dimen>
+    <dimen name="time_pick_picker_width">120.0px</dimen>
+    <dimen name="time_pick_picker_height">280.0px</dimen>
+    <dimen name="time_pick_picker_height_portrait">280.0px</dimen>
+    <dimen name="time_pick_picker_height_landscape">190.0px</dimen>
+    <dimen name="time_pick_text_view_height">116.0px</dimen>
+    <dimen name="time_pick_total_width">420.0px</dimen>
+    <item type="dimen" name="time_pick_top_margin">@dimen/margin_m</item>
+    <item type="dimen" name="time_pick_bottom_margin">@dimen/margin_s</item>
+    <item type="dimen" name="time_pick_left_margin">@dimen/margin_m_2</item>
+    <item type="dimen" name="time_pick_right_margin">@dimen/margin_m_2</item>
+    <item type="dimen" name="time_pick_title_margin">@dimen/leading</item>
+    <dimen name="time_pick_border_weight">4.0px</dimen>
+</resources>

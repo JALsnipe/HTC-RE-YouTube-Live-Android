@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0sp" android:textColor="#ff000000" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.htc.gc.companion.ui.widget.CustomHtcRimButton android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginRight="10.0sp" android:layout_marginBottom="40.0sp" android:text="Update GC Now" android:layout_alignParentBottom="true" android:onClick="Update" />
+</RelativeLayout>

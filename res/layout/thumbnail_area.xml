@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.gc.companion.view.EventThumbButton android:id="@id/gallery_thumbnail" android:background="@*android:color/black" android:layout_width="@dimen/thumb_height" android:layout_height="@dimen/thumb_width" android:src="@drawable/re_notification_default" />
+</merge>

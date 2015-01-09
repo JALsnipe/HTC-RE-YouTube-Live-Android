@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.gc.companion.view.ViewFinderArea android:id="@id/viewfinder_area" android:background="@color/sky_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.htc.gc.companion.view.BroadcastArea android:id="@id/broadcast_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <com.htc.gc.companion.view.ModesArea android:id="@id/modes_area" android:layout_width="fill_parent" android:layout_height="@dimen/re_listitem_height" android:layout_below="@id/viewfinder_area" android:layout_centerHorizontal="true" />
+    <com.htc.gc.companion.view.ModesIndicatorArea android:id="@id/modes_indicator_area" android:layout_width="fill_parent" android:layout_height="1.3399963dip" android:layout_below="@id/modes_area" />
+    <View android:id="@id/status_indicator" android:background="@color/sky_blue" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_below="@id/modes_area" />
+    <com.htc.gc.companion.view.CommonInfoArea android:orientation="vertical" android:id="@id/common_info_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_m" />
+    <com.htc.gc.companion.view.ShutterArea android:id="@id/shutter_area" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.htc.gc.companion.view.ModeSelectArea android:id="@id/mode_select_area" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/dummy_key" />
+    <RelativeLayout android:id="@id/setting_button_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/shutter_area" android:layout_alignParentBottom="true">
+        <com.htc.lib1.cc.widget.HtcImageButton android:id="@id/timelapse_stoper" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/re_shutter_stop_btn_bottom_margin" android:src="@drawable/re_capture_button_stop_l" android:layout_centerInParent="true" />
+        <com.htc.gc.companion.view.TimelapseButton android:id="@id/timelapse_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/margin_m_2" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.htc.gc.companion.view.SlowmotionButton android:id="@id/slowmotion_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/modes_area" android:layout_alignParentLeft="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/dummy_key" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentRight="true">
+        <ImageView android:layout_width="4.0dip" android:layout_height="4.0dip" android:src="@drawable/dummy_dot" android:layout_weight="1.0" />
+        <ImageView android:layout_width="4.0dip" android:layout_height="4.0dip" android:src="@drawable/dummy_dot" android:layout_weight="1.0" />
+        <ImageView android:layout_width="4.0dip" android:layout_height="4.0dip" android:src="@drawable/dummy_dot" android:layout_weight="1.0" />
+    </LinearLayout>
+</merge>

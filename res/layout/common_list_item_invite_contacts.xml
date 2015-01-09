@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.lib1.cc.widget.HtcListItem android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.lib1.cc.widget.HtcListItemColorIcon android:id="@id/left_icon" />
+    <com.htc.lib1.cc.widget.HtcListItem2LineText android:id="@id/text1" />
+    <ImageView android:id="@id/error_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_indicator_undelivered" />
+    <RadioButton android:id="@id/right_button" android:focusable="false" android:clickable="true" />
+</com.htc.lib1.cc.widget.HtcListItem>

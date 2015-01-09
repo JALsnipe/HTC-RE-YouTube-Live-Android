@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:paddingBottom="@dimen/margin_l" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/error_field" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/error_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_l" android:text="@string/gc_connect_device_err_wrong_pw" style="@style/re_05" />
+        <View style="@style/inset_line_divider" />
+    </LinearLayout>
+    <TextView android:id="@id/txt_instruction_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_2" android:layout_marginBottom="@dimen/margin_s_2" android:text="@string/devicelist_page_passwd_instruction_hint" android:layout_below="@id/error_field" style="@style/re_list_body_primary_m" />
+    <com.htc.lib1.cc.widget.HtcEditText android:id="@id/edittext_passwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_l" android:maxLines="1" android:maxLength="15" android:layout_below="@id/txt_instruction_hint" android:inputType="textPassword" />
+    <RelativeLayout android:id="@id/checkPart" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/edittext_passwd">
+        <com.htc.gc.companion.ui.widget.CustomHtcCheckBox android:id="@id/check" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_s" />
+        <TextView android:id="@id/text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gc_show_password" android:layout_toRightOf="@id/check" android:layout_centerVertical="true" style="@style/re_fixed_list_secondary_m" />
+    </RelativeLayout>
+</RelativeLayout>

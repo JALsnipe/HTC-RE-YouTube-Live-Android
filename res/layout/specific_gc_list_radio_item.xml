@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.lib1.cc.widget.HtcListItemColorIcon android:id="@id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_m" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.htc.gc.companion.ui.widget.CustomHtcRadioButton android:layout_gravity="right" android:id="@id/radio" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:paddingTop="@dimen/margin_m" android:paddingRight="@dimen/margin_m" android:paddingBottom="@dimen/margin_m" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/radio" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/list_primary_m" android:textColor="@color/re_light_primaryfont_color" android:ellipsize="end" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/list_secondary_m" android:textColor="@color/re_light_secondaryfont_color" android:id="@id/text2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" android:layout_below="@id/text1" />
+    </RelativeLayout>
+</RelativeLayout>

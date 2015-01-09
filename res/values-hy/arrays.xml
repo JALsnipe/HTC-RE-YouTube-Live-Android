@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="st_font_size_levels">
+        <item>Փոքր</item>
+        <item>Միջին</item>
+        <item>Մեծ</item>
+        <item>Գերմեծ</item>
+        <item>Ահռելի</item>
+    </string-array>
+</resources>

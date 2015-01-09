@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/done_field" android:background="@drawable/common_app_bkg_down_src" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.lib1.cc.widget.HtcFooterTextButton android:id="@id/done_button" android:layout_width="@dimen/gc_live_stream_enable_button_width" android:layout_height="fill_parent" android:text="@string/gc_enable_live_stream_done" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/divider" android:layout_marginTop="@dimen/margin_m" android:layout_marginBottom="@dimen/margin_m" android:layout_toLeftOf="@id/done_button" android:layout_centerVertical="true" style="@style/inset_vertical_divider" />
+        <TextView android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_l" android:layout_marginTop="@dimen/spacing_2" android:layout_marginRight="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_m" android:text="@string/gc_enable_live_stream" android:singleLine="false" android:layout_toLeftOf="@id/divider" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/re_09" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/gc_live_stream_enable_progress_height" android:max="100" android:indeterminate="false" android:progressDrawable="@drawable/gc_web_progress" android:layout_alignParentTop="true" style="?android:attr/progressBarStyleHorizontal" />
+    <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/done_field" android:layout_below="@id/progressBar" />
+</RelativeLayout>

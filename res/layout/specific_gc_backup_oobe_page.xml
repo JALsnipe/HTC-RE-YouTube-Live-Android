@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/re_setup_view_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:gc="http://schemas.android.com/apk/res/com.htc.gc.companion">
+    <RelativeLayout android:id="@id/top_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ab_height">
+        <ImageView android:id="@id/tutorial_img" android:background="@drawable/re_intro_cloud_backup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.htc.gc.companion.ui.widget.CustomHtcRimButton android:layout_gravity="center_horizontal" android:id="@id/button" android:layout_width="fill_parent" android:layout_height="@dimen/gc_oobe_button_height" android:layout_marginLeft="@dimen/margin_l" android:layout_marginRight="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_l" android:text="@string/gc_setup_backup_tutorial_button" android:layout_alignParentBottom="true" gc:blue_mode="true" />
+    <ScrollView android:scrollbarThumbVertical="@drawable/scroll_bar_style" android:id="@id/main_scroller" android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:fadingEdgeLength="@dimen/margin_l_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_l" android:layout_above="@id/button" android:layout_below="@id/top_area" android:overScrollMode="never" android:requiresFadingEdge="0x2000">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:gravity="center_horizontal" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_l" android:layout_marginRight="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_m_3" android:text="@string/gc_setup_backup_tutorial_text1" android:layout_centerHorizontal="true" style="@style/re_secondary_l" />
+            <RelativeLayout android:id="@id/step_field" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_l" android:layout_marginRight="@dimen/margin_l" android:layout_below="@id/description" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <RelativeLayout android:id="@id/provider_field" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/provider_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_s" android:src="@drawable/re_indicator_dot_s" android:layout_centerVertical="true" />
+                    <TextView android:id="@id/provider_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gc_setup_backup_tutorial_text2" android:layout_toRightOf="@id/provider_status" style="@style/re_secondary_l" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/provider_field" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@id/network_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_s" android:src="@drawable/re_indicator_dot_s" android:layout_centerVertical="true" />
+                    <TextView android:id="@id/network_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gc_setup_backup_tutorial_text3" android:layout_toRightOf="@id/network_status" style="@style/re_secondary_l" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@id/privacy_field" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_l" android:layout_marginTop="@dimen/margin_m_3" android:layout_marginRight="@dimen/margin_l" android:layout_below="@id/step_field" android:layout_centerHorizontal="true">
+                <TextView android:id="@id/privacy_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_s" android:text="@string/gc_privacy_policy" android:layout_centerVertical="true" style="@style/re_secondary_l" />
+                <ImageView android:id="@id/privacy_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/re_arrow" android:layout_toRightOf="@id/privacy_text" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

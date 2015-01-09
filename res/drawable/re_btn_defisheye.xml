@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/re_btn_fisheye_light_xl" />
+    <item android:state_checked="false" android:drawable="@drawable/re_btn_defisheye_rest_light_xl" />
+    <item android:drawable="@drawable/re_btn_defisheye_rest_light_xl" />
+</selector>

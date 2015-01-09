@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/slow_motion_switch_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.htc.gc.companion.ui.widget.CustomHtcCheckBox android:id="@id/slow_motion_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/slow_motion_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_xs" android:src="@drawable/re_indicator_slow_motion_s" />
+            <TextView android:textAppearance="@style/re_02" android:id="@id/slow_motion_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/leading" android:text="@string/viewfinder_slow_motion" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/re_setup_view_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:gc="http://schemas.android.com/apk/res/com.htc.gc.companion">
+    <ImageView android:id="@id/pairing_tutorial_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ab_height" android:layout_marginBottom="@dimen/margin_s_3" android:src="@drawable/re_intro_live_stream" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/button_field" android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_l" android:layout_alignParentBottom="true">
+        <com.htc.gc.companion.ui.widget.CustomHtcRimButton android:id="@id/done_button" android:layout_width="fill_parent" android:layout_height="@dimen/gc_oobe_button_height" android:text="@string/gc_live_stream_setup_done_button" gc:blue_mode="true" />
+    </RelativeLayout>
+    <ScrollView android:scrollbarThumbVertical="@drawable/scroll_bar_style" android:id="@id/main_scroller" android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:fadingEdgeLength="@dimen/margin_l_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/button_field" android:layout_below="@id/pairing_tutorial_area" android:overScrollMode="never" android:requiresFadingEdge="0x2000">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pairing_tutorial_area">
+            <TextView android:gravity="center" android:id="@id/content1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_l" android:text="@string/gc_live_stream_setup_done_description" style="@style/re_secondary_l" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

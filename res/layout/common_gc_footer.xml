@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.lib1.cc.widget.HtcFooter android:id="@id/footerBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" htcfooter:enable_transparent="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:htcfooter="http://schemas.android.com/apk/res-auto">
+    <com.htc.lib1.cc.widget.HtcFooterTextButton android:id="@id/negativeButton" android:text="@string/gc_va_cancel" />
+    <com.htc.lib1.cc.widget.HtcFooterTextButton android:id="@id/positiveButton" android:text="@string/gc_va_ok" />
+</com.htc.lib1.cc.widget.HtcFooter>

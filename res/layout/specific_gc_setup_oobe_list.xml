@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/re_setup_view_bkg" android:paddingTop="@dimen/ab_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:gc="http://schemas.android.com/apk/res/com.htc.gc.companion">
+    <RelativeLayout android:id="@id/title_layout" android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:paddingBottom="@dimen/spacing_3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_xs" android:layout_centerHorizontal="true" />
+        <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/image" android:layout_centerHorizontal="true" style="@style/fixed_re_secondary_l" />
+        <TextView android:id="@id/error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/title" android:layout_centerHorizontal="true" style="@style/fixed_re_secondary_l" />
+    </RelativeLayout>
+    <com.htc.gc.companion.ui.widget.CustomHtcListItemSeparator android:id="@id/separaorLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_layout" />
+    <com.htc.lib1.cc.widget.HtcListView android:id="@*android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/footer" android:layout_below="@id/separaorLayout" style="@style/HtcListView" />
+    <com.htc.lib1.cc.widget.HtcFooter android:id="@id/footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.lib1.cc.widget.HtcFooterTextButton android:id="@id/skip_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gc_skip" />
+    </com.htc.lib1.cc.widget.HtcFooter>
+    <com.htc.gc.companion.ui.widget.CustomHtcEmptyView android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/footer" android:layout_below="@id/separaorLayout" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/other_ble_layout" android:background="@drawable/other_ble_bg" android:layout_width="wrap_content" android:layout_height="@dimen/other_ble_dialog_height" android:layout_marginLeft="@dimen/margin_m" android:layout_marginRight="@dimen/margin_m" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/iconLayout" android:background="@drawable/other_ble_icon_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/re_btn_camcorder_light_xl" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/centerLayout" android:paddingLeft="@dimen/margin_m" android:paddingRight="@dimen/margin_m" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/iconLayout">
+            <RelativeLayout android:id="@id/counterLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <com.htc.lib1.cc.widget.HtcImageButton android:id="@id/main_btn" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_m" android:src="@drawable/re_capture_button_record_l" android:layout_centerVertical="true" />
+                <TextView android:id="@id/counting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="99:99" android:singleLine="true" android:layout_toRightOf="@id/main_btn" android:layout_centerVertical="true" style="@style/fixed_re_info_primary_s" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/time_lapse_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/centerLayout">
+            <View android:background="@drawable/common_list_divider" android:layout_width="0.70000005dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_s" android:layout_marginBottom="@dimen/margin_s" android:layout_alignParentLeft="true" />
+            <com.htc.lib1.cc.widget.HtcImageButton android:id="@id/sub_btn" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/re_capture_button_record_l" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

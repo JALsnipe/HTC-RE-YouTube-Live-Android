@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:background="@drawable/re_notification_default" android:layout_width="@dimen/gc_ntf_record_normal_icon_size" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_m" android:layout_weight="1.0">
+        <TextView android:textAppearance="@style/gc_darklist_primary_m" android:ellipsize="marquee" android:id="@id/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textAppearance="@style/gc_darklist_secondary_m" android:ellipsize="marquee" android:id="@id/secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/primary_text" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_m">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="@dimen/gc_ntf_button_size" android:layout_height="@dimen/gc_ntf_control_button_height">
+            <ImageView android:id="@id/button_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/re_notification_button" android:scaleType="center" />
+            <ImageButton android:id="@id/controller" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/re_icon_btn_stop_light_s" style="?android:attr/borderlessButtonStyle" />
+        </RelativeLayout>
+        <ImageButton android:id="@id/cancel" android:layout_width="@dimen/gc_ntf_button_size" android:layout_height="@dimen/gc_ntf_control_button_height" android:src="@drawable/icon_btn_cancel_dark" style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

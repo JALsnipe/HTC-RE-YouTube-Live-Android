@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/battery_container" android:background="#fff1f2f2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="@style/list_secondary_m" android:id="@id/remain_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_l" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/battery_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_l" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.htc.gc.companion.view.CameraCrewMainPanel android:id="@id/main_panel" android:background="@color/white" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/battery_container" />
+</RelativeLayout>

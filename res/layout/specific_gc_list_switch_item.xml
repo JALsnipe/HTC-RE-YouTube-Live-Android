@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.lib1.cc.widget.HtcListItem android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.gc.companion.ui.widget.CustomHtcListItem2LineText android:id="@id/text1" />
+    <Switch android:gravity="center_vertical" android:id="@id/custom_switch_item" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:thumb="@drawable/switch_thumb" android:textIsSelectable="false" android:track="@drawable/switch_track" android:switchMinWidth="26.0dip" />
+</com.htc.lib1.cc.widget.HtcListItem>

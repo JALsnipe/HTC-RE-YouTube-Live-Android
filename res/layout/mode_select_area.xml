@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/mode_select_bg" android:background="#ddffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/mode_select_panel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/mode_select_panel_upper" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/mode_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <RelativeLayout android:id="@id/mode_switcher_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/mode_switcher_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="bg" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <com.htc.lib1.cc.widget.HtcImageButton android:id="@id/mode_switcher" android:layout_width="40.0dip" android:layout_height="30.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/re_btn_camera_light_xl" android:scaleType="fitCenter" />
+                    <ImageView android:id="@id/mode_switcher_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="arrow" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/mode_select_panel_middle" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/mode_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/mode_select_panel_bottom" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/mode_select_panel_bottom_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="bg" />
+            <ImageButton android:id="@id/mode_timelapse" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            <com.htc.lib1.cc.widget.HtcImageButton android:id="@id/mode_select_area_bottom_btn" android:paddingLeft="@dimen/modes_btn_h_padding" android:paddingTop="@dimen/modes_btn_v_padding" android:paddingRight="@dimen/modes_btn_h_padding" android:paddingBottom="@dimen/modes_btn_v_padding" android:visibility="gone" android:layout_width="@dimen/modes_btn_width" android:layout_height="@dimen/htcbutton_height" android:src="@drawable/re_indicator_slow_motion_s" android:scaleType="fitCenter" android:layout_weight="1.0" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

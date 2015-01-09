@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="st_font_size_levels">
+        <item>Lille</item>
+        <item>Medium</item>
+        <item>Stor</item>
+        <item>Ekstra stor</item>
+        <item>Kæmpestor</item>
+    </string-array>
+</resources>

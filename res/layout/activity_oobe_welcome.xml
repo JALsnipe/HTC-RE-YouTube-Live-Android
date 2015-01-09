@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/re_setup_view_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:gc="http://schemas.android.com/apk/res/com.htc.gc.companion">
+    <RelativeLayout android:id="@id/top_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ab_height">
+        <ImageView android:id="@id/logo" android:background="@drawable/re_intro_welcome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_page_title" android:layout_below="@id/logo" android:layout_centerHorizontal="true" style="@style/re_07" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/btn_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_l" android:layout_marginRight="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_l" android:layout_alignParentBottom="true">
+        <com.htc.gc.companion.ui.widget.CustomHtcRimButton android:id="@id/btn_start" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/gc_oobe_button_height" android:layout_marginBottom="@dimen/margin_s" android:text="@string/welcome_page_start" gc:blue_mode="true" />
+        <com.htc.gc.companion.ui.widget.CustomHtcRimButton android:layout_gravity="center_horizontal" android:id="@id/btn_moreinfo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/gc_oobe_button_height" android:text="@string/welcome_page_moreinfo" gc:blue_mode="true" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/margin_l" android:layout_marginRight="@dimen/margin_l" android:layout_above="@id/btn_layout" android:layout_below="@id/top_area">
+        <TextView android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_page_detail" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/re_secondary_l" />
+    </RelativeLayout>
+</RelativeLayout>

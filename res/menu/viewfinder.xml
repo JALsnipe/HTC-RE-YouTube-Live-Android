@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/re_btn_grid_dark" android:id="@id/action_gobrowser" android:orderInCategory="10" android:title="@string/gc_hint_on_my_re" android:showAsAction="always" />
+    <item android:icon="@drawable/re_btn_settings_dark" android:id="@id/action_settings" android:orderInCategory="100" android:title="@string/gc_menu_settings" android:showAsAction="always" />
+</menu>

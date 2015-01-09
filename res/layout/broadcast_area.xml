@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="bottom" android:id="@id/broadcast_layout" android:paddingLeft="@dimen/margin_m_2" android:paddingTop="@dimen/margin_s_3" android:paddingRight="@dimen/margin_m_2" android:paddingBottom="@dimen/margin_l" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/broadcast_checkbox_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <com.htc.gc.companion.ui.widget.CustomHtcCheckBox android:id="@id/broadcast_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/broadcast_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_xs" android:src="@drawable/re_indicator_live_streaming_s" />
+            <TextView android:textAppearance="@style/re_06" android:id="@id/broadcast_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/leading" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/broadcast_status_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/broadcast_progress_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.htc.lib1.cc.widget.HtcImageButton android:id="@id/broadcast_share_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/re_btn_share_light_s" />
+                <ProgressBar android:id="@id/broadcast_progressbar" android:layout_width="@dimen/viewfinder_broadcast_width" android:layout_height="@dimen/viewfinder_broadcast_height" android:layout_marginTop="@dimen/spacing" android:progress="85" android:progressDrawable="@drawable/broadcast_progress" style="?android:attr/progressBarStyleHorizontal" />
+            </LinearLayout>
+            <com.htc.lib1.cc.widget.HtcImageButton android:id="@id/broadcast_setting_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/re_btn_edit_light_s" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

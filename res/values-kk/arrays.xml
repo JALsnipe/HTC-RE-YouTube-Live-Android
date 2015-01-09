@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="st_font_size_levels">
+        <item>Кіші</item>
+        <item>Орташа</item>
+        <item>Үлкен</item>
+        <item>Аса үлкен</item>
+        <item>Алып</item>
+    </string-array>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/re_btn_menu_dark" android:id="@id/menu_multiaction" android:orderInCategory="10" android:title="@string/gc_hint_select" android:showAsAction="always" />
+    <item android:icon="@drawable/re_btn_view_finder_dark" android:id="@id/menu_link" android:orderInCategory="100" android:title="@string/gc_hint_viewfinder" android:showAsAction="always" />
+    <item android:icon="@drawable/re_btn_settings_dark" android:id="@id/menu_main" android:orderInCategory="100" android:title="@string/gc_menu_settings" android:showAsAction="always" />
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="st_font_size_levels">
+        <item>ေသးငယ္</item>
+        <item>အလယ္အလတ္</item>
+        <item>ႀကီးမား</item>
+        <item>အလြန္ႀကီးမား</item>
+        <item>ဧရာမႀကီးမား</item>
+    </string-array>
+</resources>

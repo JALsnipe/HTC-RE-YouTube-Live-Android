@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/re_setup_view_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:gc="http://schemas.android.com/apk/res/com.htc.gc.companion">
+    <com.htc.lib1.cc.view.viewpager.HtcViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.htc.gc.companion.ui.widget.CustomHtcRimButton android:id="@id/button" android:layout_width="fill_parent" android:layout_height="@dimen/gc_oobe_button_height" android:layout_marginLeft="@dimen/margin_l" android:layout_marginRight="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_l" android:text="@string/gc_learn_more_button" android:layout_alignParentBottom="true" gc:blue_mode="true" />
+    <RelativeLayout android:id="@id/pointField" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_l" android:layout_marginRight="@dimen/margin_l" android:layout_marginBottom="@dimen/gc_learn_more_dot_height" android:layout_above="@id/button" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/point1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/re_page_indicator" />
+        <ImageView android:id="@id/point2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_s" android:src="@drawable/re_page_indicator" android:layout_toRightOf="@id/point1" />
+        <ImageView android:id="@id/point3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_s" android:src="@drawable/re_page_indicator" android:layout_toRightOf="@id/point2" />
+        <ImageView android:id="@id/point4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_s" android:src="@drawable/re_page_indicator" android:layout_toRightOf="@id/point3" />
+    </RelativeLayout>
+</RelativeLayout>

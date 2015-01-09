@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/error_field" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/error_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_l" android:text="@string/gc_connect_wifi_err_wrong_pw" style="@style/re_05" />
+            <View style="@style/inset_line_divider" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ssid_field" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/text0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_m" android:layout_marginBottom="@dimen/margin_m" android:text="@string/gc_wifi_ssid" style="@style/re_separator_primary_l" />
+            <com.htc.lib1.cc.widget.HtcEditText android:id="@id/editText0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_l" />
+            <View style="@style/inset_line_divider" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/security_field" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/security_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_m" android:text="@string/gc_wifi_security" style="@style/re_separator_primary_l" />
+            <com.htc.gc.companion.ui.widget.CustomHtcRimButton android:id="@id/security_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_l" android:text="@string/gc_wifi_proxy_option_none" />
+            <View style="@style/inset_line_divider" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/identity_field" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_m" android:text="@string/gc_wifi_identity" style="@style/re_separator_primary_l" />
+            <com.htc.lib1.cc.widget.HtcEditText android:id="@id/editText1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_l" />
+            <View style="@style/inset_line_divider" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/password_field" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/text2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_m" android:text="@string/gc_camera_password" style="@style/re_separator_primary_l" />
+            <com.htc.lib1.cc.widget.HtcEditText android:id="@id/editText2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_l" />
+            <RelativeLayout android:id="@id/check_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_l">
+                <com.htc.gc.companion.ui.widget.CustomHtcCheckBox android:id="@id/check" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_s" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gc_show_password" android:layout_toRightOf="@id/check" android:layout_centerVertical="true" style="@style/re_fixed_list_secondary_m" />
+            </RelativeLayout>
+            <View style="@style/inset_line_divider" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/proxy_field" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/proxy_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_m" android:text="@string/gc_wifi_proxy" style="@style/re_separator_primary_l" />
+            <com.htc.gc.companion.ui.widget.CustomHtcRimButton android:id="@id/proxy_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_l" android:text="@string/gc_wifi_proxy_option_none" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/proxy_setting" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View style="@style/inset_line_divider" />
+            <TextView android:id="@id/text3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_m" android:text="@string/gc_wifi_proxy_host_name" style="@style/re_separator_primary_l" />
+            <com.htc.lib1.cc.widget.HtcEditText android:id="@id/editText3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_l" android:hint="proxy.example.com" />
+            <View style="@style/inset_line_divider" />
+            <TextView android:id="@id/text4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_m" android:text="@string/gc_wifi_proxy_port" style="@style/re_separator_primary_l" />
+            <com.htc.lib1.cc.widget.HtcEditText android:id="@id/editText4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_l" android:hint="8080" android:digits="1234567890" android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

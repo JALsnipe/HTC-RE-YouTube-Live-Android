@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/shutter_area_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.htc.gc.companion.view.ShutterButton android:id="@id/shutter_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/dummy_center" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/re_capture_button_record_l" android:layout_centerInParent="true" />
+        <TextView android:textAppearance="@style/re_01" android:id="@id/record_counting" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing" android:layout_below="@id/dummy_center" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</merge>

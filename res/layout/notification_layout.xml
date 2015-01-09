@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/notification_icon" android:background="#ff2c2e2f" android:layout_width="@dimen/gc_ntf_record_normal_icon_size" android:layout_height="@dimen/gc_ntf_record_normal_icon_size" android:scaleType="center" />
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_m" android:layout_marginTop="@dimen/margin_m" android:layout_marginBottom="@dimen/margin_s" android:layout_weight="1.0">
+        <TextView android:textAppearance="@style/gc_darklist_primary_m" android:ellipsize="marquee" android:id="@id/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textAppearance="@*android:style/TextAppearance.StatusBar.EventContent" android:id="@id/secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/primary_text" />
+    </RelativeLayout>
+    <ImageButton android:id="@id/cancel" android:layout_width="@dimen/gc_ntf_button_size" android:layout_height="@dimen/gc_ntf_control_button_height" android:src="@drawable/icon_btn_cancel_dark" style="?android:attr/borderlessButtonStyle" />
+</LinearLayout>

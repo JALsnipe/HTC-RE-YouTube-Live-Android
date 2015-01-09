@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layout" android:background="@drawable/re_setup_view_bkg" android:paddingTop="@dimen/ab_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/banner" android:background="@drawable/re_intro_live_stream" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_s_3" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_l" android:layout_marginTop="@dimen/gc_setting_header_text_margin" android:layout_marginRight="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_xs_2" android:text="@string/gc_live_stream_description" style="@style/re_08" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <com.htc.lib1.cc.widget.HtcListView android:id="@*android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/HtcListView" />
+    </LinearLayout>
+    <com.htc.gc.companion.ui.widget.CustomHtcEmptyView android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

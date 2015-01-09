@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/re_setup_view_bkg" android:paddingLeft="@dimen/margin_l" android:paddingTop="@dimen/ab_height" android:paddingRight="@dimen/margin_l" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:gc="http://schemas.android.com/apk/res/com.htc.gc.companion">
+    <RelativeLayout android:id="@id/instruction_field" android:layout_width="fill_parent" android:layout_height="@dimen/gc_oobe_set_password_instruction_height">
+        <TextView android:gravity="center" android:id="@id/instruction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/fixed_re_secondary_l" />
+    </RelativeLayout>
+    <com.htc.lib1.cc.widget.HtcEditText android:id="@id/edittext_passwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/setup_ble_passwd" android:maxLines="1" android:maxLength="15" android:layout_below="@id/instruction_field" android:inputType="textPassword" />
+    <com.htc.lib1.cc.widget.HtcEditText android:id="@id/edittext_passwd_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_xs_2" android:layout_marginBottom="@dimen/margin_s" android:hint="@string/setup_ble_confirm_passwd" android:maxLines="1" android:maxLength="15" android:layout_below="@id/edittext_passwd" android:inputType="textPassword" />
+    <TextView android:gravity="center" android:id="@id/passwd_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gc_oobe_set_password_button_margin" android:text="@string/setup_ble_passwd_hint" android:layout_below="@id/edittext_passwd_confirm" style="@style/fixed_re_secondary_m" />
+    <com.htc.gc.companion.ui.widget.CustomHtcRimButton android:layout_gravity="center_horizontal" android:id="@id/btn_setpasswd" android:background="@drawable/re_button_rest" android:layout_width="fill_parent" android:layout_height="@dimen/gc_oobe_button_height" android:layout_marginBottom="@dimen/margin_l" android:text="@string/setup_ble_confirm" android:layout_below="@id/passwd_hint" gc:blue_mode="true" />
+</RelativeLayout>

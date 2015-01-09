@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.gc.companion.ui.VideoSurfaceView android:gravity="center" android:id="@id/video_surface_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <include android:layout_alignParentBottom="true" layout="@layout/vp_container" />
+    <ProgressBar android:id="@id/prepare_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" />
+    <com.htc.lib1.cc.widget.HtcImageButton android:id="@id/video_overlay_play_btn" android:layout_width="@dimen/htcbutton_width" android:layout_height="@dimen/htcbutton_height" android:src="@drawable/re_btn_play_dark_xl" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:id="@id/defisheye" android:background="#88ffffff" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_marginBottom="40.0dip" android:layout_above="@id/vp_container" android:layout_alignParentLeft="true">
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Defisheye" android:layout_weight="1.0" />
+        <com.htc.gc.companion.ui.widget.CustomHtcCheckBox android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

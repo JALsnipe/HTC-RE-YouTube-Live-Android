@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:background="@drawable/ic_launcher" android:layout_width="300.0px" android:layout_height="200.0px" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/icon">
+        <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0sp" android:text="GC Camera" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/model_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0sp" android:text="Serial #1234" />
+    </LinearLayout>
+</RelativeLayout>

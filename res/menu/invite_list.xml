@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/re_btn_check_dark" android:id="@id/apply_invite_list" android:orderInCategory="100" android:title="@string/gc_va_ok" android:showAsAction="always" />
+</menu>

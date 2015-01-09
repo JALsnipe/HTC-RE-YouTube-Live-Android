@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:paddingBottom="@dimen/margin_l" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_2" android:layout_marginBottom="@dimen/margin_s_2" android:text="@string/gc_factory_reset_dialog_msg" style="@style/re_list_body_primary_m" />
+    <RelativeLayout android:id="@id/check_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/text1">
+        <com.htc.gc.companion.ui.widget.CustomHtcCheckBox android:id="@id/check" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_s" />
+        <TextView android:id="@id/text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/check" android:layout_centerVertical="true" style="@style/re_fixed_list_secondary_m" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:paddingBottom="@dimen/margin_l" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_2" android:layout_marginBottom="@dimen/margin_s_2" android:text="@string/delete_files_after_saveq" style="@style/re_list_body_primary_m" />
+    <RelativeLayout android:id="@id/checkPart" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.htc.gc.companion.ui.widget.CustomHtcCheckBox android:id="@id/check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_s" />
+        <TextView android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/do_this_for_me" android:layout_toRightOf="@id/check" android:layout_centerVertical="true" style="@style/re_fixed_list_secondary_m" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="st_font_size_levels">
+        <item>Малий</item>
+        <item>Середній</item>
+        <item>Великий</item>
+        <item>Надвеликий</item>
+        <item>Дуже великий</item>
+    </string-array>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/re_setup_view_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ab_height">
+        <ImageView android:id="@id/tutorial_img" android:background="@drawable/re_intro_live_stream" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_s_3" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:gravity="center_horizontal" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_l" android:layout_marginTop="@dimen/margin_s_3" android:layout_marginRight="@dimen/margin_l" android:layout_marginBottom="@dimen/gc_live_stream_oobe_button_margin" android:text="@string/gc_live_streaming_description" android:layout_below="@id/top_area" android:layout_centerHorizontal="true" style="@style/re_secondary_l" />
+    <FrameLayout android:id="@id/button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_l" android:layout_marginRight="@dimen/margin_l" android:layout_marginBottom="@dimen/margin_l" android:foreground="@drawable/list_selector_light" android:layout_below="@id/description">
+        <RelativeLayout android:background="@drawable/re_button_rest" android:layout_width="fill_parent" android:layout_height="@dimen/gc_oobe_button_height">
+            <RelativeLayout android:id="@id/icon" android:layout_width="@dimen/gc_oobe_button_height" android:layout_height="@dimen/gc_oobe_button_height">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/leading_2" android:src="@drawable/icon_btn_google" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:id="@id/divider" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" style="@style/inset_vertical_divider" />
+            <TextView android:gravity="center" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_m" android:layout_marginRight="@dimen/margin_m" android:text="@string/gc_live_streaming_sign_in" android:layout_toRightOf="@id/divider" android:layout_centerVertical="true" style="@style/re_10" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

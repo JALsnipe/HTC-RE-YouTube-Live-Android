@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/vp_container" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <RelativeLayout android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/vp_controller_full" android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:paddingBottom="@dimen/margin_l" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.lib1.cc.widget.HtcImageButton android:id="@id/play_btn" android:paddingLeft="@dimen/margin_m" android:paddingRight="@dimen/margin_m" android:visibility="gone" android:layout_width="@dimen/htcbutton_width" android:layout_height="@dimen/htcbutton_height" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <com.htc.lib1.cc.widget.HtcImageButton android:id="@id/slow_motion_btn" android:paddingLeft="@dimen/margin_m" android:paddingRight="@dimen/margin_m" android:focusable="false" android:visibility="gone" android:layout_width="@dimen/htcbutton_width" android:layout_height="@dimen/htcbutton_height" android:layout_toRightOf="@id/play_btn" android:layout_alignParentBottom="true" />
+        <com.htc.lib1.cc.widget.HtcImageButton android:id="@id/volume_btn" android:paddingLeft="@dimen/margin_m" android:paddingRight="@dimen/margin_m" android:visibility="gone" android:layout_width="@dimen/htcbutton_width" android:layout_height="@dimen/htcbutton_height" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <com.htc.videowidget.videoview.widget.SeekBarContainer android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_toLeftOf="@id/volume_btn" android:layout_toRightOf="@id/slow_motion_btn" android:layout_alignParentBottom="true">
+            <com.htc.gc.companion.widget.GcSeekBar android:layout_gravity="center" android:id="@id/seekbar" android:tag="cmd_bar_seekbar" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/time_row" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/seekbar">
+                <TextView android:id="@id/time_current" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" style="@style/re_time_info_m" />
+                <TextView android:id="@id/time_duration" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/re_time_info_m" />
+            </RelativeLayout>
+        </com.htc.videowidget.videoview.widget.SeekBarContainer>
+    </RelativeLayout>
+</LinearLayout>

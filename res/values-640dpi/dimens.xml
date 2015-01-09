@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="grid_view_spacing">6.0px</dimen>
+    <dimen name="re_fixed_primary_m">60.0px</dimen>
+    <dimen name="re_fixed_secondary_m">48.0px</dimen>
+    <dimen name="re_fixed_secondary_l">68.0px</dimen>
+    <dimen name="re_fixed_info_primary_s">48.0px</dimen>
+    <dimen name="re_fixed_info_primary_m">72.0px</dimen>
+    <dimen name="re_fixed_info_primary_l">76.0px</dimen>
+    <dimen name="fixed_re_01">48.0px</dimen>
+    <dimen name="fixed_re_02">48.0px</dimen>
+    <dimen name="fixed_re_03">48.0px</dimen>
+    <dimen name="fixed_re_05">48.0px</dimen>
+    <dimen name="fixed_re_06">48.0px</dimen>
+    <dimen name="fixed_re_07">80.0px</dimen>
+    <dimen name="fixed_re_08">61.0px</dimen>
+    <dimen name="fixed_re_09">53.0px</dimen>
+    <dimen name="fixed_re_10">72.0px</dimen>
+    <dimen name="fixed_re_11">61.0px</dimen>
+</resources>

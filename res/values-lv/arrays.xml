@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="st_font_size_levels">
+        <item>Mazs</item>
+        <item>Vidēji</item>
+        <item>Liels</item>
+        <item>Īpaši liels</item>
+        <item>Milzīgs</item>
+    </string-array>
+</resources>

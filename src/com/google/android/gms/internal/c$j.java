@@ -1,0 +1,259 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.google.android.gms.internal;
+
+import java.util.List;
+
+// Referenced classes of package com.google.android.gms.internal:
+//            ka, ke, jz, kc, 
+//            jy, kh
+
+public final class q extends ka
+{
+
+    public DY fU[];
+    public DY fV;
+    public String fW;
+
+    public static q b(byte abyte0[])
+    {
+        return (q)ke.a(new <init>(), abyte0);
+    }
+
+    public void a(jz jz1)
+    {
+        if (fU != null && fU.length > 0)
+        {
+            for (int i = 0; i < fU.length; i++)
+            {
+                <init> <init>1 = fU[i];
+                if (<init>1 != null)
+                {
+                    jz1.a(1, <init>1);
+                }
+            }
+
+        }
+        if (fV != null)
+        {
+            jz1.a(2, fV);
+        }
+        if (!fW.equals(""))
+        {
+            jz1.b(3, fW);
+        }
+        super.a(jz1);
+    }
+
+    public ke b(jy jy1)
+    {
+        return k(jy1);
+    }
+
+    public int c()
+    {
+        int i = super.c();
+        if (fU != null && fU.length > 0)
+        {
+            for (int j = 0; j < fU.length; j++)
+            {
+                k k1 = fU[j];
+                if (k1 != null)
+                {
+                    i += jz.b(1, k1);
+                }
+            }
+
+        }
+        if (fV != null)
+        {
+            i += jz.b(2, fV);
+        }
+        if (!fW.equals(""))
+        {
+            i += jz.g(3, fW);
+        }
+        DY = i;
+        return i;
+    }
+
+    public boolean equals(Object obj)
+    {
+        if (obj != this) goto _L2; else goto _L1
+_L1:
+        boolean flag1 = true;
+_L4:
+        return flag1;
+_L2:
+        boolean flag;
+        flag = obj instanceof DY;
+        flag1 = false;
+        if (!flag) goto _L4; else goto _L3
+_L3:
+        DY dy;
+        boolean flag2;
+        dy = (DY)obj;
+        flag2 = kc.equals(fU, dy.fU);
+        flag1 = false;
+        if (!flag2) goto _L4; else goto _L5
+_L5:
+        if (fV != null) goto _L7; else goto _L6
+_L6:
+        DY dy1;
+        dy1 = dy.fV;
+        flag1 = false;
+        if (dy1 != null) goto _L4; else goto _L8
+_L8:
+        if (fW != null) goto _L10; else goto _L9
+_L9:
+        String s;
+        s = dy.fW;
+        flag1 = false;
+        if (s != null) goto _L4; else goto _L11
+_L11:
+        boolean flag3;
+        if (aae != null && !aae.isEmpty())
+        {
+            break MISSING_BLOCK_LABEL_171;
+        }
+        if (dy.aae == null)
+        {
+            break; /* Loop/switch isn't completed */
+        }
+        flag3 = dy.aae.isEmpty();
+        flag1 = false;
+        if (!flag3) goto _L4; else goto _L12
+_L12:
+        return true;
+_L7:
+        if (!fV.equals(dy.fV))
+        {
+            return false;
+        }
+          goto _L8
+_L10:
+        if (!fW.equals(dy.fW))
+        {
+            return false;
+        }
+          goto _L11
+        return aae.equals(dy.aae);
+          goto _L8
+    }
+
+    public int hashCode()
+    {
+        int i = 31 * (527 + kc.hashCode(fU));
+        int j;
+        int l;
+        int i1;
+        int j1;
+        List list;
+        int k1;
+        if (fV == null)
+        {
+            j = 0;
+        } else
+        {
+            j = fV.hashCode();
+        }
+        l = 31 * (j + i);
+        if (fW == null)
+        {
+            i1 = 0;
+        } else
+        {
+            i1 = fW.hashCode();
+        }
+        j1 = 31 * (i1 + l);
+        list = aae;
+        k1 = 0;
+        if (list != null)
+        {
+            boolean flag = aae.isEmpty();
+            k1 = 0;
+            if (!flag)
+            {
+                k1 = aae.hashCode();
+            }
+        }
+        return j1 + k1;
+    }
+
+    public aae k(jy jy1)
+    {
+        do
+        {
+            int i = jy1.ky();
+            switch (i)
+            {
+            default:
+                if (a(jy1, i))
+                {
+                    continue;
+                }
+                // fall through
+
+            case 0: // '\0'
+                return this;
+
+            case 10: // '\n'
+                int j = kh.c(jy1, 10);
+                int l;
+                aae aaae[];
+                if (fU == null)
+                {
+                    l = 0;
+                } else
+                {
+                    l = fU.length;
+                }
+                aaae = new fU[j + l];
+                if (l != 0)
+                {
+                    System.arraycopy(fU, 0, aaae, 0, l);
+                }
+                for (; l < -1 + aaae.length; l++)
+                {
+                    aaae[l] = new <init>();
+                    jy1.a(aaae[l]);
+                    jy1.ky();
+                }
+
+                aaae[l] = new <init>();
+                jy1.a(aaae[l]);
+                fU = aaae;
+                break;
+
+            case 18: // '\022'
+                if (fV == null)
+                {
+                    fV = new <init>();
+                }
+                jy1.a(fV);
+                break;
+
+            case 26: // '\032'
+                fW = jy1.readString();
+                break;
+            }
+        } while (true);
+    }
+
+    public eadString q()
+    {
+        fU = o();
+        fV = null;
+        fW = "";
+        aae = null;
+        DY = -1;
+        return this;
+    }
+
+    public ()
+    {
+        q();
+    }
+}
